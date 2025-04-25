@@ -143,8 +143,29 @@ for i in range(numero):
 
 # 6 - Crie uma lista de números e utilize um loop for para calcular a soma de todos os elementos. Utilize um bloco try-except para lidar com possíveis exceções.
 
+lista_numeros = [1,2,3,4,5,6,7,8,9,10]
+soma = 0
+
+try:
+    for numero in lista_numeros:
+        soma += numero
+    print(f"Soma dos elementos: {soma}")
+except Exception as e:
+    print(f"Ocorreu um erro: {e}")
 
 # 7 - Construa um código que calcule a média dos valores em uma lista. Utilize um bloco try-except para lidar com a divisão por zero, caso a lista esteja vazia.
+
+lista_numeros = [1,2,3,4,5,6,7,8,9,10]
+soma = 0
+
+try:
+    for numero in numeros:
+        soma += numero
+    print(f'A média é igual a: {soma / len(lista_numeros)}')
+except ZeroDivisionError:
+    print("A lista está vazia, não é possível calcular a média.")
+except Exception as e:
+    print(f"Ocorreu um erro: {e}")
 
 
 
@@ -154,6 +175,13 @@ for i in range(numero):
 1 - Crie um dicionário representando informações sobre uma pessoa, como nome, idade e cidade.
 """
 
+dados_pessoais = {
+    'nome': 'Fernando',
+    'idade': 31,
+    'cidade': 'Belo Horizonte'
+}
+
+dados_pessoais.items()
 
 """
 2 - Utilizando o dicionário criado no item 1:
@@ -162,6 +190,16 @@ for i in range(numero):
 - Remova um item do dicionário.
 """
 
+dados_pessoais = {
+    'nome': 'Fernando',
+    'idade': 31,
+    'cidade': 'Belo Horizonte'
+}
+
+dados_pessoais['nome'] = 'Fernando Luiz Ferreira'
+dados_pessoais.update({'profissao':'Analista de BD'})
+dados_pessoais.pop('cidade')
+dados_pessoais.items()
 
 """
 3 - Crie um dicionário utilizando para representar números e seus quadrados de 1 a 5.

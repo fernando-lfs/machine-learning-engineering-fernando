@@ -26,7 +26,7 @@ links = soup.find_all('a')
 #     text = link.get_text(strip=True)
 #     print(href)
 
-with open('links_extraidos.txt', 'w', encoding='utf-8') as file:
+with open('links_extraidos_novo.txt', 'w', encoding='utf-8') as file:
     for link in links:
         href = link.get('href')
         text = link.get_text(strip=True)
