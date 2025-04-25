@@ -271,3 +271,13 @@ if __name__ == "__main__":
         db.create_all()
         # print('Banco de dados criado!')
         app.run(debug=True)
+
+# 2 - Imprima a frase: Meu nome é {nome} e tenho {idade} anos em que nome e idade precisam ser valores armazenados em variáveis.
+
+nome = "Fernando"
+idade = 31
+print(f"Meu nome é {nome} e tenho {idade} anos")
+
+# 3 - Imprima a palavra: ‘ALURA’ de modo que cada letra fique em uma linha, como mostrado a seguir:
+
+print("A", "L", "U", "R", "A", sep="\n")
