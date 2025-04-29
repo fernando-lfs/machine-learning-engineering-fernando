@@ -271,13 +271,3 @@ if __name__ == "__main__":
         db.create_all()
         # print('Banco de dados criado!')
         app.run(debug=True)
-
-# 1 - Imprima a frase: Python na Escola de Programação da Alura.
-
-print('Python na Escola de Programação da Alura')
-
-# 2 - Imprima a frase: Meu nome é {nome} e tenho {idade} anos em que nome e idade precisam ser valores armazenados em variáveis.
-
-nome = 'Fernando'
-idade = 31
-print(f'Meu nome é {nome} e tenho {idade} anos')
